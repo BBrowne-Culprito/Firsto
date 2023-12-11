@@ -1,0 +1,17 @@
+#Pattern script
+
+n = int(input("Enter number of rows: "))
+# k = ord("A") #gives the ASCII value of 'A'
+
+# shape (using nested For Loop)
+    #rows #range(start:0, end:n, step:1)
+for i in range(n): 
+    k = ord("A") + i #gives the ASCII value of 'A' + row value (to get required pattern)
+    
+    #columns
+    for j in range(i + 1):
+        print("*", end=" ") #star to be replaced with ASCII value of letter
+        print(chr(k), end=" ") #convert ASCII value to character
+        k += 1
+    print()
+    
